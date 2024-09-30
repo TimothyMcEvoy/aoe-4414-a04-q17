@@ -1,4 +1,4 @@
-# ecef_to_sez.py
+# ymdhms_to_jd.py
 #
 # Usage: python3 ymdhms_to_jd.py year month day hour
 #  Conversion from year, month, day, hour, minute, second to fractional Julian date
@@ -19,18 +19,14 @@
 
 # import Python modules
 import sys # argv
-import math # math module
-
-# "constants"
-
 
 # initialize script arguments
-year = float('nan') # x in ECEF origin of the SEZ frame
-month = float('nan') # y in ECEF origin of the SEZ frame
-day = float('nan') # z in ECEF origin of the SEZ frame
-hour = float('nan') # x ECEF position
-minute = float('nan') # y ECEF position
-second = float('nan') # z ECEF position
+year = float('nan')
+month = float('nan')
+day = float('nan')
+hour = float('nan')
+minute = float('nan')
+second = float('nan')
 
 # parse script arguments
 if len(sys.argv)==7:
