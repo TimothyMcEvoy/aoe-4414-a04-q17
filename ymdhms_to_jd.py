@@ -47,6 +47,6 @@ else:
 
 jd=day-32075+1461*(year+4800+(month-14)/12)/4+367*(month-2-(month-14)/12*12)/12-3*((year+4900+(month-14)/12)/100)/4
 jd_mid=jd-0.5
-d_frac=(second+60*(month+60*hour))/86400
+d_frac=(second+60*(minute+60*hour))/86400
 jd_frac=jd_mid+d_frac
 print(jd_frac)
